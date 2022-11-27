@@ -7,12 +7,20 @@
 body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
-  font-family: Roboto sans-serif;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.02em;
 }
+/* Logo */
 
 .logo {
   color: var(--title-text-color);
+  text-transform: uppercase;
   text-decoration: none;
+  font-family: Raleway, sans-serif;
+  letter-spacing: 0.03em;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
 }
 .logoweb {
   color: var(--accent-color);
@@ -28,33 +36,19 @@ body {
 /* background-color: E5E5E5 */
 
 /* Site nav */
+
 .site-nav .link {
   color: var(--title-text-color);
   text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
 }
-
-/* Section header */
-.section-header {
-  background-color: var(--title-text-color);
-}
-.section-header-title {
-  color: var(--primary-bg-color);
-  text-align: center;
-}
-.section-header-button:hover,
-.section-header-button:focus {
-  color: var(--primary-bg-color);
-  background-color: #404bbf;
-  cursor: pointer;
-}
-.section-header-button {
-  background-color: var(--accent-color);
-  color: var(--primary-bg-color);
-}
+/* Contacts */
 
 .contacts-link {
   color: var(--primary-text-color);
@@ -67,11 +61,52 @@ body {
 
 .contacts {
   list-style: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
+
+/* Section header */
+
+.section-header {
+  background-color: var(--title-text-color);
+}
+.section-header-title {
+  color: var(--primary-bg-color);
+  text-align: center;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 1.07;
+}
+.section-header-button:hover,
+.section-header-button:focus {
+  color: var(--primary-bg-color);
+  background-color: #404bbf;
+  cursor: pointer;
+}
+.section-header-button {
+  background-color: var(--accent-color);
+  color: var(--primary-bg-color);
+  text-align: center;
+  letter-spacing: 0.04em;
+  font-family: inherit;
+}
+
 /* Section about us */
 .none-title {
   display: none;
 }
+.title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1, 2;
+}
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .feature-list .title {
   color: var(--title-text-color);
 }
@@ -81,32 +116,73 @@ body {
 /* Section work */
 .work-title {
   color: var(--title-text-color);
+  text-align: center;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.11;
 }
 /* Our team */
+.our-team {
+  background-color: #f4f4fd;
+}
 .team {
   color: var(--title-text-color);
+  text-align: center;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.11;
 }
 .team-title {
   color: var(--title-text-color);
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
 }
 .team-text {
   color: var(--primary-text-color);
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
-.logostudio {
-  color: #f4f4fd;
+.our-team-fon {
+  background-color: var(--primary-bg-color);
 }
+
 /* Footer */
+.logofooter {
+  text-transform: uppercase;
+  font-family: Raleway, sans-serif;
+  letter-spacing: 0.03em;
+  color: #f4f4fd;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+}
+
 .footer {
-  background: #2e2f42;
+  background-color: #2e2f42;
 }
 .footertext {
   color: #e7e9fc;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
 /* Portfolio */
 
 .projects-button {
   color: var(--accent-color);
   background-color: #f4f4fd;
+  text-align: center;
+  letter-spacing: 0.04em;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
 }
 .projects-button:hover,
 .projects-button:focus {
@@ -116,10 +192,16 @@ body {
 .projects-title {
   color: var(--title-text-color);
   text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
 }
 .projects-text {
   color: var(--primary-text-color);
   text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
 .line {
   text-decoration: none;
