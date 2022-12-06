@@ -220,7 +220,7 @@ body {
   font-weight: 600;
   font-size: 36px;
   line-height: 1.11;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .work-list {
   display: flex;
@@ -327,7 +327,8 @@ body {
   margin-top: 92px;
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 .picture-box {
   max-width: 360px;
