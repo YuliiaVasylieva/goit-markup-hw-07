@@ -445,6 +445,16 @@ body {
   border-radius: 4px;
   padding: 8px 64px 8px 24px;
   position: relative;
+  cursor: pointer;
+}
+.form-subscribe {
+  position: absolute;
+  right: 540px;
+}
+.form {
+  position: absolute;
+  top: 140px;
+  right: 159px;
 }
 .buttom-icon {
   position: absolute;
@@ -453,10 +463,7 @@ body {
   left: 117px;
   bottom: 10px;
 }
-.form-subscribe {
-  margin-left: 80px;
-  display: block;
-}
+
 .form-title {
   color: #ffffff;
   letter-spacing: 0.02em;
@@ -465,29 +472,15 @@ body {
   font-size: 16px;
   line-height: 1.5;
 }
-.buttom-footer {
-  position: absolute;
-  top: 140px;
-  right: 159px;
-}
-.form-footer {
-  position: relative;
-}
-.mail-lable {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateY(150%);
-  color: rgba(255, 255, 255, 0.6);
-  padding-left: 16px;
-}
+
 .email-input {
   background-color: transparent;
   border-color: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  margin-top: 16px;
+  margin-right: 24px;
   width: 264px;
   height: 40px;
+  color: #ffff;
 }
 
 .backdrop {
