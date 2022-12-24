@@ -475,7 +475,7 @@ body {
 
 .email-input {
   background-color: transparent;
-  border-color: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   margin-right: 24px;
   width: 264px;
@@ -526,6 +526,7 @@ body {
   margin: 24px 24px 528px 360px;
   transition: background-color 250ms var(--timing-function),
     fill 250ms var(--timing-function);
+  margin-top: 24px;
 }
 .modal-button:hover,
 .modal-button:focus {
@@ -535,15 +536,60 @@ body {
 }
 .form-modal {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 24px;
+}
+.form-modal-title {
+  color: #2e2f42;
+  letter-spacing: 0.02em;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 72px;
+  text-align: center;
+  margin-bottom: 14px;
+  /* margin-top: 0; */
 }
 .form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 26px;
+}
+.form-field input {
+  /* width: 100%; */
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+}
+.form-field label {
+  margin-bottom: 4px;
+  text-align: left;
 }
 .form-input {
 }
-.form-label {
+.form-lable {
+  color: #8e8f99;
+  letter-spacing: 0.04em;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  margin-top: 72px;
 }
+.consent input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  border: 1.25px solid #2e2f42;
+  border-radius: 2px;
+}
+
 /* Portfolio */
 .projects-button {
   color: var(--accent-color);
