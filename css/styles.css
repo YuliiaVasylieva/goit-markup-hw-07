@@ -504,7 +504,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 1;
-  height: 576px;
+  height: 584px;
   width: 408px;
   background-color: #fcfcfc;
   border-radius: 4px;
@@ -512,21 +512,20 @@ body {
     3px rgba(0, 0, 0, 0.12), 0px, 1px, 1px rgba(0, 0, 0, 0.14);
   transition: opacity 250ms var(--timing-function);
   position: relative;
+  padding: 24px;
 }
 
 .modal-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
+  top: 24px;
+  right: 24px;
   width: 24px;
   height: 24px;
   border-radius: 50%;
   background-color: #e7e9fc;
   border: 1px Solid rgba(0, 0, 0, 0.1);
-  margin: 24px 24px 528px 360px;
   transition: background-color 250ms var(--timing-function),
     fill 250ms var(--timing-function);
-  margin-top: 24px;
 }
 .modal-button:hover,
 .modal-button:focus {
@@ -535,14 +534,7 @@ body {
   outline: #404bbf;
 }
 .form-modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 360px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 24px;
 }
 .form-modal-title {
   color: #2e2f42;
@@ -551,10 +543,9 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  margin-top: 72px;
-  text-align: center;
+  margin-top: 48px;
   margin-bottom: 14px;
-  /* margin-top: 0; */
+  text-align: center;
 }
 .form-field {
   display: flex;
@@ -562,11 +553,11 @@ body {
   margin-bottom: 26px;
 }
 .form-field input {
-  /* width: 100%; */
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   width: 360px;
   height: 40px;
+  margin-bottom: 8px;
 }
 .form-field label {
   margin-bottom: 4px;
@@ -581,15 +572,26 @@ body {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.33;
-  margin-top: 72px;
 }
+
 .consent input[type="checkbox"] {
   width: 16px;
   height: 16px;
   border: 1.25px solid #2e2f42;
   border-radius: 2px;
 }
-
+.form-comment {
+  resize: none;
+  height: 120px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+}
 /* Portfolio */
 .projects-button {
   color: var(--accent-color);
