@@ -429,15 +429,48 @@ body {
 .part-position {
   display: block;
 }
-
-.form-button {
-  align-items: center;
-  width: 165px;
+.form {
+  display: flex;
+  align-items: flex-end;
+  margin-left: auto;
+  gap: 24px;
+}
+.email-input {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  min-width: 264px;
   height: 40px;
+  color: #ffffff;
+  padding-left: 16px;
+}
+.form-subscribe {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.form-subscribe-title {
+  margin-bottom: 16px;
+}
+.email-input::placeholder {
+  letter-spacing: 0.04em;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  color: rgba(255, 255, 255, 0.6);
+}
+.form-button {
+  position: relative;
   background-color: var(--accent-color);
   color: #ffffff;
   border: none;
-  text-align: center;
   letter-spacing: 0.04em;
   font-family: inherit;
   font-weight: 500;
@@ -447,23 +480,14 @@ body {
   padding: 8px 64px 8px 24px;
   position: relative;
   cursor: pointer;
+  transition: background-color 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function);
 }
-.form-subscribe {
-  position: absolute;
-  right: 540px;
-}
-.form {
-  position: absolute;
-  top: 140px;
-  right: 159px;
-}
+
 .buttom-icon {
-  margin-left: 16px;
   position: absolute;
   top: 10px;
-  right: 14px;
-  left: 117px;
-  bottom: 10px;
+  right: 24px;
 }
 
 .form-title {
@@ -473,16 +497,6 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-}
-
-.email-input {
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  margin-right: 24px;
-  width: 264px;
-  height: 40px;
-  color: #ffff;
 }
 
 .backdrop {
@@ -506,7 +520,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 1;
-  height: 584px;
   width: 408px;
   background-color: #fcfcfc;
   border-radius: 4px;
@@ -660,6 +673,7 @@ body {
   transition: background-color 250ms var(--timing-function),
     box-shadow 250ms var(--timing-function);
   align-self: center;
+  margin-bottom: 24px;
 }
 .modal-form-submit:focus,
 .modal-form-submit:hover {
