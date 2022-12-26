@@ -538,6 +538,7 @@ body {
   height: 24px;
   border-radius: 50%;
   background-color: #e7e9fc;
+  cursor: pointer;
   border: 1px Solid rgba(0, 0, 0, 0.1);
   transition: background-color 250ms var(--timing-function),
     fill 250ms var(--timing-function);
@@ -650,10 +651,7 @@ body {
   background-position: center;
 }
 .modal-form-check:focus + .modal-form-check-desk::before {
-  background-color: #404bbf;
-  background-image: url(../images/Vector.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  outline: 1.25px solid #2e2f42;
 }
 .modal-form-submit {
   background-color: var(--accent-color);
