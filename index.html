@@ -27,8 +27,9 @@
           </a>
           <button
             type="button"
-            class="menu-button-mobail is-open"
+            class="menu-button-mobail js-open-menu"
             aria-expanded="false"
+            aria-controls="mobile-menu"
           >
             <svg width="32" height="22" aria-label="mobile menu switch">
               <use
@@ -41,7 +42,10 @@
               ></use>
             </svg>
           </button>
-          <div class="menu-container">menu</div>
+          <div class="menu-container js-menu-container" id="menu-container">
+            <div class="navigation"></div>
+            <div class="contacts"></div>
+          </div>
           <!-- <ul class="site-nav list">
             <li class="iteam">
               <a href="./index.html" class="link current">Studio</a>
@@ -542,12 +546,13 @@
         </div>
       </div>
     </footer> -->
-    <script src="./js/modal.js"></script>
     <script
-      defer
+      defer=""
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
