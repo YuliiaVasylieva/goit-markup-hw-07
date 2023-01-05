@@ -919,8 +919,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    width: 264px;
-    margin-bottom: 72px;
+    max-width: 264px;
   }
   .social-media-title {
     color: #ffffff;
@@ -931,17 +930,16 @@ body {
   }
   .footer-link {
     display: flex;
+    align-items: center;
     justify-content: center;
     gap: 16px;
-    padding-left: 0;
   }
 
   .social-media {
     display: block;
     align-items: center;
     justify-content: center;
-    margin-left: 24px;
-    margin-bottom: 142px;
+    margin-left: 120px;
   }
   .footer-link-logo {
     display: flex;
@@ -960,9 +958,7 @@ body {
 
   .footer-position {
     display: flex;
-    gap: 24px;
-    padding-left: calc(108px - 15px);
-    margin-bottom: 72px;
+    align-items: baseline;
   }
   .part-position {
     display: block;
@@ -970,9 +966,7 @@ body {
   .form {
     display: flex;
     align-items: flex-end;
-    width: 453px;
-    height: 80px;
-    /* margin-left: auto; */
+    margin-left: auto;
     gap: 24px;
   }
   .email-input {
