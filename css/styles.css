@@ -798,7 +798,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 118px;
+    margin-left: auto;
   }
   .header-image {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -1409,6 +1409,10 @@ body {
 
 /* DESKTOP */
 @media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
   .contacts {
     display: flex;
     flex-direction: row;
@@ -1546,6 +1550,10 @@ body {
     display: flex;
     align-items: flex-end;
     margin-left: 100px;
+  }
+  .part-for-tablet {
+    display: flex;
+    margin-bottom: 0px;
   }
 }
 
